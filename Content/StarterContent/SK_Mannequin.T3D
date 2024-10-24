@@ -1,0 +1,88 @@
+Begin Object Class=/Script/Engine.Skeleton Name="SK_Mannequin" ExportPath="/Script/Engine.Skeleton'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin'"
+   Begin Object Class=/Script/Engine.SkeletalMeshSocket Name="SkeletalMeshSocket_3" ExportPath="/Script/Engine.SkeletalMeshSocket'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin:SkeletalMeshSocket_3'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalMeshSocket Name="SkeletalMeshSocket_2" ExportPath="/Script/Engine.SkeletalMeshSocket'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin:SkeletalMeshSocket_2'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalMeshSocket Name="SkeletalMeshSocket_1" ExportPath="/Script/Engine.SkeletalMeshSocket'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin:SkeletalMeshSocket_1'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalMeshSocket Name="SkeletalMeshSocket_0" ExportPath="/Script/Engine.SkeletalMeshSocket'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin:SkeletalMeshSocket_0'"
+   End Object
+   Begin Object Class=/Script/Engine.BlendProfile Name="UpperBodyMask" ExportPath="/Script/Engine.BlendProfile'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin:UpperBodyMask'"
+   End Object
+   Begin Object Class=/Script/Engine.BlendProfile Name="UpperBodyLowerBodySplitMask" ExportPath="/Script/Engine.BlendProfile'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin:UpperBodyLowerBodySplitMask'"
+   End Object
+   Begin Object Class=/Script/Engine.BlendProfile Name="LowerBodyMask" ExportPath="/Script/Engine.BlendProfile'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin:LowerBodyMask'"
+   End Object
+   Begin Object Class=/Script/Engine.BlendProfile Name="LeftFingersMask" ExportPath="/Script/Engine.BlendProfile'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin:LeftFingersMask'"
+   End Object
+   Begin Object Class=/Script/Engine.BlendProfile Name="FastFeet" ExportPath="/Script/Engine.BlendProfile'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin:FastFeet'"
+   End Object
+   Begin Object Class=/Script/Engine.AnimCurveMetaData Name="AnimCurveMetaData_0" ExportPath="/Script/Engine.AnimCurveMetaData'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin:AnimCurveMetaData_0'"
+   End Object
+   Begin Object Name="SkeletalMeshSocket_3" ExportPath="/Script/Engine.SkeletalMeshSocket'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin:SkeletalMeshSocket_3'"
+      SocketName="hand_rSocket"
+      BoneName="hand_r"
+      RelativeLocation=(X=-9.724040,Y=2.145861,Z=0.000000)
+   End Object
+   Begin Object Name="SkeletalMeshSocket_2" ExportPath="/Script/Engine.SkeletalMeshSocket'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin:SkeletalMeshSocket_2'"
+      SocketName="foot_l_Socket"
+      BoneName="foot_l"
+      RelativeRotation=(Pitch=0.000000,Yaw=90.000000,Roll=-90.000000)
+   End Object
+   Begin Object Name="SkeletalMeshSocket_1" ExportPath="/Script/Engine.SkeletalMeshSocket'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin:SkeletalMeshSocket_1'"
+      SocketName="foot_r_Socket"
+      BoneName="foot_r"
+      RelativeRotation=(Pitch=0.000000,Yaw=-90.000000,Roll=-90.000000)
+   End Object
+   Begin Object Name="SkeletalMeshSocket_0" ExportPath="/Script/Engine.SkeletalMeshSocket'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin:SkeletalMeshSocket_0'"
+      SocketName="weapon_r_muzzle"
+      BoneName="weapon_r"
+      RelativeLocation=(X=45.000000,Y=0.000000,Z=25.000000)
+   End Object
+   Begin Object Name="UpperBodyMask" ExportPath="/Script/Engine.BlendProfile'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin:UpperBodyMask'"
+      OwningSkeleton="/Script/Engine.Skeleton'SK_Mannequin'"
+      ProfileEntries(0)=(BoneReference=(BoneName="head"),BlendScale=0.850000)
+      Mode=BlendMask
+   End Object
+   Begin Object Name="UpperBodyLowerBodySplitMask" ExportPath="/Script/Engine.BlendProfile'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin:UpperBodyLowerBodySplitMask'"
+      OwningSkeleton="/Script/Engine.Skeleton'SK_Mannequin'"
+      ProfileEntries(0)=(BoneReference=(BoneName="head"),BlendScale=1.000000)
+      Mode=BlendMask
+   End Object
+   Begin Object Name="LowerBodyMask" ExportPath="/Script/Engine.BlendProfile'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin:LowerBodyMask'"
+      OwningSkeleton="/Script/Engine.Skeleton'SK_Mannequin'"
+      Mode=BlendMask
+   End Object
+   Begin Object Name="LeftFingersMask" ExportPath="/Script/Engine.BlendProfile'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin:LeftFingersMask'"
+      OwningSkeleton="/Script/Engine.Skeleton'SK_Mannequin'"
+      Mode=BlendMask
+   End Object
+   Begin Object Name="FastFeet" ExportPath="/Script/Engine.BlendProfile'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin:FastFeet'"
+      OwningSkeleton="/Script/Engine.Skeleton'SK_Mannequin'"
+      Mode=TimeFactor
+   End Object
+   Begin Object Name="AnimCurveMetaData_0" ExportPath="/Script/Engine.AnimCurveMetaData'/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin:AnimCurveMetaData_0'"
+      CurveMetaData=(("MoveData_Speed", ()),("base_pose", ()),("calf_l_back_50", ()),("calf_l_back_120", ()),("calf_l_back_90", ()),("calf_l_back_150", ()),("calf_r_back_50", ()),("calf_r_back_120", ()),("calf_r_back_90", ()),("calf_r_back_150", ()),("clavicle_l_fwd_30", ()),("clavicle_l_down_20", ()),("clavicle_l_back_30", ()),("clavicle_l_up_40", ()),("clavicle_r_fwd_30", ()),("clavicle_r_down_20", ()),("clavicle_r_back_30", ()),("clavicle_r_up_40", ()),("clavicle_r_back_310", ()),("clavicle_r_up_401", ()),("foot_l_down_60", ()),("foot_l_up_35", ()),("foot_r_up_35", ()),("foot_r_down_60", ()),("hand_l_down_90", ()),("hand_l_up_20", ()),("hand_l_up_90", ()),("hand_r_up_90", ()),("hand_r_down_90", ()),("hand_r_up_20", ()),("Pose_0", ()),("Pose_1", ()),("Pose_2", ()),("Pose_3", ()),("Pose_4", ()),("Pose_5", ()),("Pose_6", ()),("Pose_7", ()),("Pose_8", ()),("lowerarm_l_in_110", ()),("lowerarm_l_in_35", ()),("lowerarm_l_out_35", ()),("lowerarm_l_in_50", ()),("lowerarm_l_in_75", ()),("lowerarm_l_in_10", ()),("lowerarm_l_out_10", ()),("lowerarm_l_in_90", ()),("lowerarm_r_in_10", ()),("lowerarm_r_out_10", ()),("lowerarm_r_out_35", ()),("lowerarm_r_in_75", ()),("lowerarm_r_in_50", ()),("lowerarm_r_in_110", ()),("lowerarm_r_in_35", ()),("lowerarm_r_in_90", ()),("thigh_l_bck_10", ()),("thigh_l_fwd_10", ()),("thigh_l_in_45_out_90", ()),("thigh_l_fwd_90", ()),("thigh_l_bck_90", ()),("thigh_l_bck_50", ()),("thigh_l_out_110", ()),("thigh_l_out_10", ()),("thigh_l_fwd_45", ()),("thigh_l_in_50", ()),("thigh_l_fwd_110", ()),("thigh_l_out_55", ()),("thigh_l_out_85", ()),("thigh_r_fwd_10", ()),("thigh_r_out_55", ()),("thigh_r_fwd_90", ()),("thigh_r_fwd_45", ()),("thigh_r_bck_10", ()),("thigh_r_out_85", ()),("thigh_r_in_50", ()),("thigh_r_out_10", ()),("thigh_r_out_110", ()),("thigh_r_bck_50", ()),("thigh_r_bck_90", ()),("thigh_r_in_45_out_90", ()),("thigh_r_fwd_110", ()),("upperarm_l_back_45", ()),("upperarm_l_out_55", ()),("upperarm_l_out110_twist_in_70", ()),("upperarm_l_out_85", ()),("upperarm_l_fwd_110", ()),("upperarm_l_in_10", ()),("upperarm_l_out110_twist_out_70", ()),("upperarm_l_out_twist_a", ()),("upperarm_l_fwd_15", ()),("upperarm_l_out_15", ()),("upperarm_l_back_10", ()),("upperarm_l_out110", ()),("upperarm_l_fwd_twist_in_a", ()),("upperarm_l_fwd_90", ()),("upperarm_r_out_15", ()),("upperarm_r_fwd_15", ()),("upperarm_r_out_twist_a", ()),("upperarm_r_out110_twist_in_70", ()),("upperarm_r_fwd_90", ()),("upperarm_r_out110", ()),("upperarm_r_back_10", ()),("upperarm_r_out_85", ()),("upperarm_r_in_10", ()),("upperarm_r_back_45", ()),("upperarm_r_out110_twist_out_70", ()),("upperarm_r_out_55", ()),("upperarm_r_fwd_twist_in_a", ()),("upperarm_r_fwd_110", ()),("Distance", ()),("RemainingTurnYaw", ()),("TurnYawWeight", ()),("GroundDistance", ()),("DisableLHandIK", ()),("ScaleDownWeaponR", ()),("DisableLegIK", ()),("blendParent1", ()),("DisableRHandIK", ()),("DisableLeftHandPoseOverride", ()),("applyHipfireOverridePose", ()),("DisableHandIKRetargeting", ()),("lowerarm_r_in_80", ()),("lowerarm_l_in_80", ()),("calf_r_back_130", ()),("calf_l_back_130", ()),("Pose_9", ()))
+   End Object
+   BoneTree(64)=()
+   VirtualBoneGuid=6E25ACE747AA82697EC32F927E85F862
+   Sockets(0)="/Script/Engine.SkeletalMeshSocket'SkeletalMeshSocket_0'"
+   Sockets(1)="/Script/Engine.SkeletalMeshSocket'SkeletalMeshSocket_1'"
+   Sockets(2)="/Script/Engine.SkeletalMeshSocket'SkeletalMeshSocket_2'"
+   Sockets(3)="/Script/Engine.SkeletalMeshSocket'SkeletalMeshSocket_3'"
+   BlendProfiles(0)="/Script/Engine.BlendProfile'UpperBodyMask'"
+   BlendProfiles(1)="/Script/Engine.BlendProfile'LowerBodyMask'"
+   BlendProfiles(2)="/Script/Engine.BlendProfile'FastFeet'"
+   BlendProfiles(3)="/Script/Engine.BlendProfile'LeftFingersMask'"
+   BlendProfiles(4)="/Script/Engine.BlendProfile'UpperBodyLowerBodySplitMask'"
+   SlotGroups(0)=(SlotNames=("FullBody","DefaultSlot","UpperBody","FullBodyAdditivePreAim","UpperBodyAdditive","UpperBodyDynAdditiveBase","UpperBodyDynAdditive"))
+   SlotGroups(1)=(GroupName="AdditiveGroup",SlotNames=("AdditiveHitReact"))
+   PreviewSkeletalMesh="/Game/Characters/Mannequins/Meshes/SKM_Quinn_Simple.SKM_Quinn_Simple"
+   AnimationNotifies(0)="SaveAttack"
+   AnimationNotifies(1)="ResetCombo"
+   AnimationNotifies(2)="l_foot_plant"
+   AnimationNotifies(3)="r_foot_plant"
+   AnimationNotifies(4)="AN_FootPlant_Left_C"
+   AnimationNotifies(5)="AN_FootPlant_Right_C"
+   AssetUserData(0)="/Script/Engine.AnimCurveMetaData'AnimCurveMetaData_0'"
+End Object

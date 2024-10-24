@@ -5,6 +5,11 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/Users/relen/Documents/Unreal Projects/Strings_of_Fate/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/Users/relen/Documents/Unreal Projects/Strings_of_Fate/Content/StarterContent/weapons/BP_Sword.uasset",
+				"C:/Users/relen/Documents/Unreal Projects/Strings_of_Fate/Content/enemies/BP_Enemy_Base.uasset",
+				"C:/Users/relen/Documents/Unreal Projects/Strings_of_Fate/Content/StarterContent/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.uasset",
+				"C:/Users/relen/Documents/Unreal Projects/Strings_of_Fate/Content/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.uasset",
 				"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Content/StarterContent/Maps/StarterMap_BuiltData.uasset"
 			]
 		}

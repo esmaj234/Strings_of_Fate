@@ -45,13 +45,10 @@
 SourceArt/**/*.png
 SourceArt/**/*.tga
 
-<<<<<<< HEAD
-=======
 # Binary Files
 Binaries/*
 Plugins/**/Binaries/*
 
->>>>>>> master
 # Builds
 Build/*
 

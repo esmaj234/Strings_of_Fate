@@ -1,0 +1,574 @@
+{
+	"folders": [
+		{
+			"name": "Strings_of_Fate",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/Users/Shared/Epic Games/UE_5.4"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Strings_of_Fate Mac Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_Fate",
+					"Mac",
+					"Debug",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_Fate Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_Fate",
+					"Mac",
+					"Debug",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Strings_of_Fate Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_Fate Mac Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_Fate",
+					"Mac",
+					"Debug",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_Fate Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_Fate",
+					"Mac",
+					"DebugGame",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_Fate Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_Fate",
+					"Mac",
+					"DebugGame",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Strings_of_Fate Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_Fate Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_Fate",
+					"Mac",
+					"DebugGame",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_Fate Mac Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_Fate",
+					"Mac",
+					"Development",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_Fate Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_Fate",
+					"Mac",
+					"Development",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Strings_of_Fate Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_Fate Mac Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_Fate",
+					"Mac",
+					"Development",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_Fate Mac Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_Fate",
+					"Mac",
+					"Test",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_Fate Mac Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_Fate",
+					"Mac",
+					"Test",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Strings_of_Fate Mac Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_Fate Mac Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_Fate",
+					"Mac",
+					"Test",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_Fate Mac Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_Fate",
+					"Mac",
+					"Shipping",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_Fate Mac Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_Fate",
+					"Mac",
+					"Shipping",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Strings_of_Fate Mac Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_Fate Mac Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_Fate",
+					"Mac",
+					"Shipping",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_FateEditor Mac Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_FateEditor",
+					"Mac",
+					"Debug",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_FateEditor Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_FateEditor",
+					"Mac",
+					"Debug",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Strings_of_FateEditor Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_FateEditor Mac Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_FateEditor",
+					"Mac",
+					"Debug",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_FateEditor Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_FateEditor",
+					"Mac",
+					"DebugGame",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_FateEditor Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_FateEditor",
+					"Mac",
+					"DebugGame",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Strings_of_FateEditor Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_FateEditor Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_FateEditor",
+					"Mac",
+					"DebugGame",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_FateEditor Mac Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_FateEditor",
+					"Mac",
+					"Development",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_FateEditor Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_FateEditor",
+					"Mac",
+					"Development",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Strings_of_FateEditor Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			},
+			{
+				"label": "Strings_of_FateEditor Mac Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"Strings_of_FateEditor",
+					"Mac",
+					"Development",
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.4"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch Strings_of_Fate (Debug)",
+				"request": "launch",
+				"program": "/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Binaries/Mac/UnrealGame-Mac-Debug.app/Contents/MacOS/UnrealGame-Mac-Debug",
+				"preLaunchTask": "Strings_of_Fate Mac Debug Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.4",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch Strings_of_Fate (DebugGame)",
+				"request": "launch",
+				"program": "/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Binaries/Mac/UnrealGame-Mac-DebugGame.app/Contents/MacOS/UnrealGame-Mac-DebugGame",
+				"preLaunchTask": "Strings_of_Fate Mac DebugGame Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.4",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch Strings_of_Fate (Development)",
+				"request": "launch",
+				"program": "/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Binaries/Mac/UnrealGame.app/Contents/MacOS/UnrealGame",
+				"preLaunchTask": "Strings_of_Fate Mac Development Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.4",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch Strings_of_Fate (Test)",
+				"request": "launch",
+				"program": "/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Binaries/Mac/UnrealGame-Mac-Test.app/Contents/MacOS/UnrealGame-Mac-Test",
+				"preLaunchTask": "Strings_of_Fate Mac Test Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.4",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch Strings_of_Fate (Shipping)",
+				"request": "launch",
+				"program": "/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Binaries/Mac/UnrealGame-Mac-Shipping.app/Contents/MacOS/UnrealGame-Mac-Shipping",
+				"preLaunchTask": "Strings_of_Fate Mac Shipping Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.4",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch Strings_of_FateEditor (Debug)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.4/Engine/Binaries/Mac/UnrealEditor-Mac-Debug.app/Contents/MacOS/UnrealEditor-Mac-Debug",
+				"preLaunchTask": "Strings_of_FateEditor Mac Debug Build",
+				"args": [
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.4",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch Strings_of_FateEditor (DebugGame)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.4/Engine/Binaries/Mac/UnrealEditor-Mac-DebugGame.app/Contents/MacOS/UnrealEditor-Mac-DebugGame",
+				"preLaunchTask": "Strings_of_FateEditor Mac DebugGame Build",
+				"args": [
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.4",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch Strings_of_FateEditor (Development)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.4/Engine/Binaries/Mac/UnrealEditor.app/Contents/MacOS/UnrealEditor",
+				"preLaunchTask": "Strings_of_FateEditor Mac Development Build",
+				"args": [
+					"/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.4",
+				"type": "lldb"
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Mac Development Build",
+				"program": "/Users/Shared/Epic Games/UE_5.4/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/Users/erinsmajdek/Documents/Unreal Projects/Strings_of_Fate/Strings_of_Fate.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/Users/Shared/Epic Games/UE_5.4"
+			}
+		]
+	}
+}
